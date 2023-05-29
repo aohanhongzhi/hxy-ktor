@@ -10,13 +10,6 @@ import org.jetbrains.exposed.sql.*
 
 private val logger = KotlinLogging.logger {}
 
-val database = Database.connect(
-    url = "jdbc:h2:mem:test;DB_CLOSE_DELAY=-1",
-    user = "root",
-    driver = "org.h2.Driver",
-    password = ""
-)
-
 @Serializable
 data class User(val name: String, val age: Int)
 class UserService {
