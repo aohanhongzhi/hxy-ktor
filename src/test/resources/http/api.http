@@ -1,0 +1,14 @@
+POST http://localhost:8080/users
+Content-Type: application/json; charset=UTF-8
+
+{
+  "name": "eric",
+  "age": "310"
+}
+
+
+### 查询
+GET http://localhost:8080/users/1
+
+### 查询
+GET http://localhost:8080/usersList
